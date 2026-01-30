@@ -26,6 +26,10 @@ a {
     color: #002b36;
 }
 
+img {
+    border: 2px solid #002b36;
+}
+
 #wrapper {
     width: 100%;
     max-width: 700px;
@@ -57,8 +61,14 @@ header a {
     margin: 10px;
 }
 
-#ratIJvadeli {
-    height: 250px;
+#img1 {
+    background-image: url(/img/hills.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+#img2 {
     background-image: url(/img/ratijvadeli.webp);
     background-position: center;
     background-size: cover;
@@ -67,19 +77,34 @@ header a {
 
 .bento-grid {
     display: grid;
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-auto-flow: dense;
     gap: 4px;
 }
-.bento-section-primary {
-  grid-column: span 3;
+.bento-section-4x2 {
+  grid-column: span 4;
   grid-row: span 2;
 }
 
-.bento-section-secondary {
-  grid-column: span 5;
+.bento-section-8x2 {
+  grid-column: span 8;
   grid-row: span 2;
 }
+
+.bento-section-6x2 {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
+.bento-section-3x2 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.bento-section-6x4 {
+    grid-column: span 6;
+    grid-row: span 4;
+}
+
 .bento-grid div {
     border: 2px solid #002b36;
     padding: 4px
