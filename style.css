@@ -8,14 +8,16 @@
 
 body {
     font-family: "IBM Plex Sans", sans-serif;
-    color: #002b36;
-    background-color: #eee8d5;
+    background-color: white;
+    font-size: 16px;
+    color: #0a0a0a;
 }
 
 .mono {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     font-size: 14px;
+    color: #737373;
 }
 
 a {
@@ -23,7 +25,16 @@ a {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
     font-size: 14px;
-    color: #002b36;
+    color: #737373;
+}
+
+a:hover {
+    color: #0a0a0a;
+}
+
+h1, h2, h3, h5, h6 {
+    color: #0a0a0a;
+    font-weight: 500;
 }
 
 img {
@@ -47,7 +58,7 @@ header a {
     padding: 0px 5px;
 }
 #hero-section {
-    height: 400px;
+    height: 750px;
     display: flex;
     text-align: center;
     align-items: center;
@@ -106,8 +117,8 @@ header a {
 }
 
 .bento-grid div {
-    border: 2px solid #002b36;
-    padding: 4px
+    /* border: 2px solid #737373; */
+    padding: 8px
 }
 
 footer {
