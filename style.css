@@ -9,40 +9,57 @@
 body {
     font-family: "IBM Plex Sans", sans-serif;
     background-color: white;
-    font-size: 16px;
+    font-size: 14px;
     color: #0a0a0a;
 }
 
 .mono {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     color: #737373;
+}
+
+.greytext {
+    color: #737373;
+}
+.greytext b {
+    color: #0a0a0a;
 }
 
 a {
     text-decoration: none;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 500;
+    font-family: "IBM Plex Sans", sans-serif;
+    /* font-family: "IBM Plex Mono", monospace; */
     font-size: 14px;
-    color: #737373;
+    color: #1B56FD;
+    transition: 1s;
 }
 
 a:hover {
-    color: #0a0a0a;
+    color: #1B56FD50;
+    transition: 1s;
+}
+
+hr {
+    margin: 7px 0px;
+    border: 0px;
+    border-bottom: 1px solid #73737350;
 }
 
 h1, h2, h3, h5, h6 {
     color: #0a0a0a;
     font-weight: 500;
+    font-size: 20px;
 }
 
-img {
-    border: 2px solid #002b36;
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #ff914d;
 }
 
 #wrapper {
-    width: 100%;
+    width: 90%;
     max-width: 700px;
     margin: auto;
     /* background-color: #e1d9be; */
@@ -50,20 +67,42 @@ img {
 
 /* Header */
 header {
-    padding: 6px 12px;
-    display: grid;
-    text-align: center;
+    color: #737373;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
 }
 header a {
-    padding: 0px 5px;
+    font-size: 13px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    color: #737373;
+}
+header a:hover {
+    color: #0a0a0a;
+}
+#logo {
+    color: #ff914d;
+    font-family: "IBM Plex Mono", monospace;
+    float: left;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+#navlinks {
+    float: right;
 }
 #hero-section {
-    height: 750px;
+    /* background-image: url(/img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    height: 300px;
+    width: 100%;
     display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    /* text-align: center; */
     flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 #ratIcon {
@@ -90,21 +129,40 @@ header a {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-auto-flow: dense;
-    gap: 4px;
+    gap: 8px;
 }
-.bento-section-4x2 {
-  grid-column: span 4;
+.bento-section-tls {
+    border-top-left-radius: 14px;
+  grid-column: span 7;
   grid-row: span 2;
 }
 
-.bento-section-8x2 {
-  grid-column: span 8;
+.bento-section-trw {
+    border-top-right-radius: 14px;
+  grid-column: span 5;
   grid-row: span 2;
 }
 
 .bento-section-6x2 {
   grid-column: span 6;
   grid-row: span 2;
+}
+
+.bento-section-4x4bl {
+  grid-column: span 4;
+  grid-row: span 4;
+  border-bottom-left-radius: 14px;
+}
+
+.bento-section-4x4 {
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.bento-section-4x4br {
+  grid-column: span 4;
+  grid-row: span 4;
+  border-bottom-right-radius: 14px;
 }
 
 .bento-section-3x2 {
@@ -117,7 +175,7 @@ header a {
 }
 
 .bento-grid div {
-    /* border: 2px solid #737373; */
+    border: 1px solid #73737350;
     padding: 8px
 }
 
