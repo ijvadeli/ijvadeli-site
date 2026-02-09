@@ -124,9 +124,9 @@ header a:hover {
   font-weight: 600;
   display: flex;
   width: max-content;
-  height: 20px;
   padding: 2px 10px;
   border-radius: 14px;
+  font-size: 13px;
 }
 .buttonOrange:hover {
     background-color: #ff914d;
@@ -138,9 +138,9 @@ header a:hover {
   font-weight: 600;
   display: flex;
   width: max-content;
-  height: 20px;
   padding: 2px 10px;
   border-radius: 14px;
+  font-size: 13px;
 }
 .buttonRegular:hover {
     background-color: #00bf63;
